@@ -6,11 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy birth day</title>
     <link rel="stylesheet" href="css/style.css">
+	<style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        canvas {
+            display: block;
+        }
+        footer {
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <canvas id=c></canvas>
 <p>From the codepals to <a href="https://www.facebook.com/H.A.Dat.079">H.A.Đạt</a><span>, by <a href="https://github.com/HADat079">github</a></span></p>
-
+<footer>
+	
+<a href="index.html"><button>Click để mở quà</button></a>
+</footer>
 <script>
     var w = c.width = window.innerWidth,
 		h = c.height = window.innerHeight,
@@ -19,7 +56,7 @@
 		hh = h / 2,
 		
 		opts = {
-			strings: [ 'HAPPY', 'BIRTHDAY!','Anh Xuân Quý','17.10.1998',''],
+			strings: [ 'HAPPY', 'BIRTHDAY!','Phương Thảo','29.07.2003','Chúc em yêu sinh nhật thật nhiều niềm vui,',' ấm áp và hạnh phúc.'],
 			charSize: 30,
 			charSpacing: 35,
 			lineHeight: 40,
